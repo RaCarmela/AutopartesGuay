@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Pangolin', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;  
 }
 
@@ -11,9 +11,7 @@
 body{
     background: linear-gradient(to right, #76795d, #33362d);
     display: inline; 
-}
-.back{
-    background-image: url(https://cdn.fansshare.com/image/backgroundimage/webpage-background-image-for-website-538116935.jpg);   
+
 }     
 
 /* Header */
@@ -41,8 +39,7 @@ display: grid;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    
+    align-content: center;   
 }
 .ul1{
     width: 100%;
@@ -95,58 +92,13 @@ main{
 .consutanosIndex{
     width: 400px;
     height: 100px;
-    margin: 20px;
+    margin-top: 50px;
     border: 5px solid black;
     display: flex;
 }
-.burbujas{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color:#33362d;
-    opacity: .10;
-    position: absolute;
-    bottom: 10px;
-    animation: burbujas 3s linear infinite ;
-}
 
-.burbujas:nth-child(1){
-    width: 80px;
-    height: 80px;
-    left: 95%;
-    animation-duration: 5s;
-    animation-delay: 2s;
-}
 
-.burbujas:nth-child(1){
-    width: 50px;
-    height: 50px;
-    left: 90%;
-    animation-duration: 7s;
-    animation-delay: 5s;
-}
 
-.burbujas:nth-child(1){
-    width: 20px;
-    height: 20px;
-    left: 100%;
-    animation-duration: 3s;
-    animation-delay: 1s;
-}
-
-@keyframes burbujas{
-    0%{
-        bottom: 0;
-        opacity: 0;
-    }
-    50%{
-        opacity: .4;
-    }
-    100%{
-        bottom: 300px;
-        opacity: 1;
-    }
-}
 .sticky{
     display: grid;
     grid-row: auto;
@@ -166,7 +118,10 @@ main{
     }
 }
 /* Quienes somos */
-.slider{
+.quienes-somos{
+    background-color: #010200;
+}
+.slider{  
     width: 400px;
     height: 100%;
     margin: 50px auto 0;
@@ -199,17 +154,13 @@ main{
     95%{margin-left: -300%;}
 }
 .parrafo{
+    color: #76795d;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
     height: 150px;
-    border: 5px solid #33362d; 
+    border: 5px solid #798567; 
 }
-
-
-
-/* Header */
-/* Main */
 
 /* Propiedades compartidas entre paginas */
 h1{
@@ -240,7 +191,7 @@ h2{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #76795d;
+    background-color: #0d0e0d;
 }
 .card{
   position: relative;
@@ -273,12 +224,12 @@ h2{
     height: 45px;
     line-height: 45px;
     color: #33362d;
-    background: #798567 (o,o,o,4);
+    background: #76795d (o,o,o,4);
     text-align: center;   
 }
 .card .back{
     transform: perspective(600px) rotateY(180deg);
-    background: #010200 (3,35,54);
+    background: #010200;
     padding: 15px;
     color: #76795d;
     display: flex;
@@ -293,7 +244,7 @@ h2{
     line-height: 50px;
 }
 .card .back .link a{
-    color: white ;
+    color:#798567  ;
 }
 .card .back h3{
     font-size: 30px;
@@ -354,6 +305,23 @@ h2{
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
+}
+.footer{
+    margin: 20px;
+    border-radius: 10px solid;
+    background-color: #76795d;
+}
+/* Como llegar */
+.ubicacion{
+    color: #798567;
+    display: grid;
+    grid-area: auto;
+}
+.dir{
+    display: flex;
+   flex-direction: row;
+    margin-left: 80px;
+    color: #798567;
 }
 
 
