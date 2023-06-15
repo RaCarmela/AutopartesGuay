@@ -17,7 +17,7 @@ body{
 /* Header */
 header{
 background-color: #010200;
-display: grid;
+display: flex;
 
 }
 .navegador{
@@ -38,6 +38,7 @@ display: grid;
 .liContainer{
     width: 100%;
     display: flex;
+    flex-grow: inherit;
     justify-content: space-around;
     align-content: center;   
 }
@@ -122,6 +123,7 @@ main{
     background-color: #010200;
 }
 .slider{  
+    display: grid;
     width: 400px;
     height: 100%;
     margin: 50px auto 0;
@@ -154,12 +156,13 @@ main{
     95%{margin-left: -300%;}
 }
 .parrafo{
+    display: inline-flex;
     color: #76795d;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
     height: 150px;
-    border: 5px solid #798567; 
+    
 }
 
 /* Propiedades compartidas entre paginas */
@@ -186,12 +189,16 @@ h2{
     margin:20px;
 }
 /* Nuestros Productos */
-.body1{
+.divContainer{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background-color: #0d0e0d;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
 }
 .card{
   position: relative;
@@ -307,6 +314,7 @@ h2{
     font-size: 20px;
 }
 .footer{
+    display: flex;
     margin: 20px;
     border-radius: 10px solid;
     background-color: #76795d;
