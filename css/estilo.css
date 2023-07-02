@@ -17,7 +17,7 @@ body{
 
 /* Header */
 header{
-    max-width: 75em;
+    display: flex;
 }
 .navbar{
 background-color: #010200;
@@ -185,6 +185,10 @@ main{
     
 }
 
+.video{
+    display: flex;
+}
+
 /* Propiedades compartidas entre paginas */
 h1{
     color: #33362d;
@@ -205,14 +209,14 @@ h1{
     padding: 20px;
 }
 h2{
-    font-size: 20px;
+    display: flex;
     margin:20px;
 }
 /* Nuestros Productos */
 .divContainer{
+   
     align-items: center;
     justify-content: center;
-    min-width: 800px;
     background-color: #0d0e0d;
 }
 .wrap{
@@ -336,7 +340,6 @@ h2{
     font-size: 20px;
 }
 .footer{
-    max-width: 75em;
     display: flex;
     margin: 20px;
     border-radius: 10px solid;
