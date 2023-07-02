@@ -27,8 +27,10 @@ display: flex;
 .logoContainer{
     width: 150px;
     height: 100%;
-    display: flex;
+    display: flex
+    ;
 }
+
 .fotoAuto{
     width: 80%;
     height: 80%;
@@ -47,7 +49,8 @@ display: flex;
     height: 100px;
     display: flex;
     justify-content: space-around;
-    align-items: center;}
+    align-items: center;
+}
   
 .ul1 li{
     list-style: none;
@@ -59,6 +62,15 @@ display: flex;
     align-content: center;
     font-size: 20px;
     transition: background-color .5s;
+}
+.nav-link{
+    text-decoration: none;
+    color: #76795d;
+    align-items: center;
+    align-content: center;
+    font-size: 20px;
+    
+
 }
 
 .ul1 li a:hover{
