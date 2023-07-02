@@ -15,7 +15,7 @@ body{
 }     
 
 /* Header */
-header{
+.navbar{
 background-color: #010200;
 display: flex;
 
@@ -133,6 +133,7 @@ main{
 /* Quienes somos */
 .quienes-somos{
     background-color: #010200;
+    display: flex;
 }
 .slider{  
     display: grid;
@@ -168,8 +169,8 @@ main{
     95%{margin-left: -300%;}
 }
 .parrafo{
-    display: inline-flex;
-    color: #76795d;
+    display:flex;
+    color:black;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
@@ -202,10 +203,9 @@ h2{
 }
 /* Nuestros Productos */
 .divContainer{
-    display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-width: 800px;
     background-color: #0d0e0d;
 }
 .wrap{
@@ -285,7 +285,10 @@ h2{
     border: 5px solid black;
 }
 
+.contenedor1 .btn{
+    display: list-item;
 
+}
 
 
 .formulario{   
