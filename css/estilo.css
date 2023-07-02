@@ -9,12 +9,16 @@
 
 /* Body */
 body{
+    font-size: 16px;
     background: linear-gradient(to right, #76795d, #33362d);
     display: inline; 
 
 }     
 
 /* Header */
+header{
+    max-width: 75em;
+}
 .navbar{
 background-color: #010200;
 display: flex;
@@ -22,6 +26,7 @@ display: flex;
 }
 .navegador{
     width: 100%;
+    max-width: 75em;
     display: flex;   
 }
 .logoContainer{
@@ -81,7 +86,9 @@ display: flex;
 
 /* Main del index */
 main{
+    max-width: 75em;
     display: inline;
+    
 }
 .titulo_inicio {
     color: #798567;
@@ -329,6 +336,7 @@ h2{
     font-size: 20px;
 }
 .footer{
+    max-width: 75em;
     display: flex;
     margin: 20px;
     border-radius: 10px solid;
