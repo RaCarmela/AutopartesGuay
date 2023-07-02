@@ -17,17 +17,20 @@ body{
 
 /* Header */
 header{
+    background-color: #010200;
     display: flex;
 }
 .navbar{
-background-color: #010200;
-display: flex;
-
+    margin: 10px;
+    display: flex;
 }
 .navegador{
     width: 100%;
     max-width: 75em;
     display: flex;   
+}
+.container-fluid{
+    background-color:#798567;
 }
 .logoContainer{
     width: 150px;
@@ -37,9 +40,10 @@ display: flex;
 }
 
 .fotoAuto{
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     margin: 5px;
+    
 }
 
 .liContainer{
@@ -59,15 +63,17 @@ display: flex;
   
 .ul1 li{
     list-style: none;
+    color:#76795d;
 }
 .ul1 li a{
     text-decoration: none;
     color: #76795d;
     align-items: center;
     align-content: center;
-    transition: background-color .5s;
+    
 }
 .nav-link{
+    display: flex;
     text-decoration: none;
     color: #76795d;
     align-items: center;
@@ -75,7 +81,7 @@ display: flex;
 }
 
 .ul1 li a:hover{
-    background-color: white;
+    background-color:#76795d;
     border-radius: 5px;
 }
 
@@ -120,8 +126,8 @@ main{
     grid-row: auto;
 }
 .logoWp{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     margin-top: 5px;
     border-radius: 10px;
 }
@@ -213,7 +219,7 @@ h2{
     margin: 10px;
     align-items: center;
     justify-content: center;
-    background-color: #0d0e0d;
+    background-color:black;
 }
 .wrap{
     display: flex;
