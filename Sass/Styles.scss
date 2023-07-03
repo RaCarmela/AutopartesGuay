@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Index */
+body{
+    font-size: 16px;
+    background: linear-gradient(to right, #76795d, #33362d);
+    display: inline; 
+
+ header{
+      background-color: black;
+      display: flex;
+
+     .navbar{
+            margin: 10px;
+            display: flex;
+         .navegador{
+                     width: 100%;
+                     max-width: 75em;
+                     display: flex;   
+                   }
+         .fotoAuto{
+                    width: 60%;
+                    height: 60%;
+                    margin: 5px;
+                  }
+         .ul{
+               width: 100%;
+               height: 100px;
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+              li{
+                  list-style: none;
+                  color:#76795d;
+                  a{
+                     text-decoration: none;
+                     color: #76795d;
+                     align-items: center;
+                     align-content: center;
+                      a:hover{
+                               background-color:#76795d;
+                                border-radius: 5px;
+                            }
+                      .nav-link{
+                             display: flex;
+                             text-decoration: none;
+                             color: #76795d;
+                             align-items: center;
+                             align-content: center;
+                            }
+                    }
+               }
+           }
+        }
+    }
+  main{
+      max-width: 75em;
+      display: inline;
+
+     .divContainer{
+          margin: 10px;
+         align-items: center;
+         justify-content: center;
+         background-color:black;
+
+          .titulo1{
+             font-size: 40px; color: #33362d ;
+             animation: mover-izquierda-derecha 4s 1;
+             margin-top: 100px;
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        margin: 10px;
+        border-radius: 10px solid;
+        background-color: #76795d;
+
+        .sticky{
+             display: grid;
+             grid-row: auto;
+            }
+
+        .logoWp{
+             height: 30px;
+             width: 30px;
+             margin-top: 5px;
+             border-radius: 10px;
+
+             @keyframes mover-izquierda-derecha{
+                from{ 
+                   transform: translateX(-100px)
+                }
+                to{
+                    transform: translateX (-10px)
+                }
+            }
+
+        .div{
+            width: 400px;
+            height: 100px;
+            margin-top: 50px;
+            border: 5px solid black;
+            display: flex;
+
+            .consultanosIndex{
+                 width: 400px;
+                 height: 100px;
+                 margin-top: 50px;
+                 border: 5px solid black;
+                 display: flex;
+               }
+        }
+    }
+
+ }
+}
+/* Quienes somos */
+body{
+    main{
+        h1{
+            color: #33362d;
+            font-size: 40px;
+            width: 100%;
+            height: 50%;
+            margin: 10px;
+            padding: 10px;
+            border: 5px, solid black;
+            animation: mover-izquierda-derecha 2s 1;
+        }
+        h2{
+            display: flex;
+            margin:20px;
+        }
+        .quienes-somos{
+            background-color: #010200;
+            display: flex;
+            ul{
+                display: grid;
+                width: 400px;
+                height: 100%;
+                margin: 50px auto 0;
+                animation: slide 15s infinite alternate ease-in-out;
+              div{
+                  display: flex;
+                  padding: 0;
+                  width: 600%;
+
+                  li{
+                      list-style: none;
+                      width: 100%;
+                      img{
+                          width: 100%;
+                          @keyframes slide{
+                              0% {margin-left: 0%;}
+                              20%{margin-left: 0%;}
+                        
+                              25% {margin-left: -100%;}
+                              45%{margin-left: -100%;}
+                        
+                              50% {margin-left: -200%;}
+                              70%{margin-left: -200%;}
+                        
+                              75% {margin-left: -300%;}
+                              95%{margin-left: -300%;}
+                            }
+                        }
+                   }
+                }
+            }
+        }
+        p{
+            display:flex;
+            color:black;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 150px;
+        }
+        .video{
+            display: flex;
+        }
+    }
+}
+/*Nuestros Productos*/
+body{
+    main{
+       .section{
+         margin: 10px;
+         align-items: center;
+         justify-content: center;
+         background-color:black;
+         display: flex;
+         flex-wrap: wrap;
+         .card{
+             position: relative;
+             width: 200px;
+             height: 300px;
+             .face{
+                 position:absolute;
+                 width: 100%;
+                 height: 100%;
+                 backface-visibility: hidden;
+                 border-radius: 10px;
+                 overflow: hidden;
+                 transition: .5s;
+                 .front{
+                       transform: perspective(600px) rotateY(0deg);
+                       box-shadow: 0 5px 10px #010200;
+                        img{
+                             position: absolute;
+                             width: 100%;
+                             height: 100%;
+                             object-fit: cover;
+                            }
+                        h3{
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 45px;
+                            line-height: 45px;
+                            color: #33362d;
+                            background: #76795d (o,o,o,4);
+                            text-align: center;   
+                        }  
+                    }  
+                 .back{
+                     div{
+                         border-top: solid 1px #010200;
+                         height: 50px;
+                         line-height: 50px;
+                       }
+                    }  
+                }                       
+            }  
+        }
+    }
+}
+/*Medios de pago*/
+body{
+    main{
+        section{
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color:black;
+            .contenedor1{
+                display: flex;
+                height: 10px;
+                width: 20px;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .btn{
+                border: solid 3px;
+                position: relative;
+                padding: 20px 10px;
+                text-decoration: none;
+                color: #33362d ;
+                letter-spacing: 10px;
+                transition: all 6.s ease;
+                margin: 5px;
+                .btn a{
+                    text-decoration: none;
+                    color: aliceblue;
+                    font-size: 20px;
+                }
+                .btn:hover{
+                    background-color: black;
+                    box-shadow: 0 0 20px var(--color);
+                    border-color: var(--color);
+                }   
+            }
+        }
+    }
+}
+/*Contacto*/
+body{
+    main{
+        fieldset{
+            .formulario{   
+                display: grid;
+                justify-content: center;
+                align-content: space-around;
+            }
+            .divContainer{
+                margin: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color:black;
+            }
+        }
+    }
+}
+/*Como llegar*/
+body{
+    main{
+        section{
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color:black;
+            p{
+                color: #798567;
+                display: grid;
+                grid-area: auto;
+            }
+            .dir{
+                display: flex;
+               flex-direction: row;
+                margin-left: 80px;
+                color: #798567;
+            }
+        }
+    }
+}

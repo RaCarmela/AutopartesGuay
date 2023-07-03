@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Index */
+body {
+  font-size: 16px;
+  background: linear-gradient(to right, #76795d, #33362d);
+  display: inline;
+}
+body header {
+  background-color: black;
+  display: flex;
+}
+body header .navbar {
+  margin: 10px;
+  display: flex;
+}
+body header .navbar .navegador {
+  width: 100%;
+  max-width: 75em;
+  display: flex;
+}
+body header .navbar .fotoAuto {
+  width: 60%;
+  height: 60%;
+  margin: 5px;
+}
+body header .navbar .ul {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header .navbar .ul li {
+  list-style: none;
+  color: #76795d;
+}
+body header .navbar .ul li a {
+  text-decoration: none;
+  color: #76795d;
+  align-items: center;
+  align-content: center;
+}
+body header .navbar .ul li a a:hover {
+  background-color: #76795d;
+  border-radius: 5px;
+}
+body header .navbar .ul li a .nav-link {
+  display: flex;
+  text-decoration: none;
+  color: #76795d;
+  align-items: center;
+  align-content: center;
+}
+body main {
+  max-width: 75em;
+  display: inline;
+}
+body main .divContainer {
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+body main .divContainer .titulo1 {
+  font-size: 40px;
+  color: #33362d;
+  animation: mover-izquierda-derecha 4s 1;
+  margin-top: 100px;
+}
+body .footer {
+  display: flex;
+  margin: 10px;
+  border-radius: 10px solid;
+  background-color: #76795d;
+}
+body .footer .sticky {
+  display: grid;
+  grid-row: auto;
+}
+body .footer .logoWp {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+@keyframes mover-izquierda-derecha {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX -10px;
+  }
+}
+body .footer .logoWp .div {
+  width: 400px;
+  height: 100px;
+  margin-top: 50px;
+  border: 5px solid black;
+  display: flex;
+}
+body .footer .logoWp .div .consultanosIndex {
+  width: 400px;
+  height: 100px;
+  margin-top: 50px;
+  border: 5px solid black;
+  display: flex;
+}
+body Body {
+  font-size: 16px;
+  background: linear-gradient(to right, #76795d, #33362d);
+  display: inline;
+}
+body Body nav {
+  margin: 10px;
+  display: flex;
+}
+
+/*# sourceMappingURL=styles.map */
